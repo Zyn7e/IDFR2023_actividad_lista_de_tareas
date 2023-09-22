@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./assets/styles/index.css">
+
+  <title>Lista De Tareas</title>
+</head>
+
+<body>
+  <h1>Lista de Tareas</h1>
+  
+  <div class="new-task">
+    <input type="text" autofocus name="new-task" id="new-task" placeholder="Escribe una nueva tarea">
+    <button type="button" onclick="addTask()">Agregar</button>
+  </div>
+
+  <div class="filter-buttons">
+    <span>Filtrar por: </span>
+    <button id="complete-filter" type="button">Completadas</button>
+    <button id="incomplete-filter" type="button">Incompletas</button>
+    <button id="all-filter" type="button">Todas</button>
+  </div>
+
+  <ul id="task-list"></ul>
+
+  <script src="./assets/scripts/script.js"></script>
+</body>
+
+</html>
